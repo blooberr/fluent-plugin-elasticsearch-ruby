@@ -1,4 +1,5 @@
 require "fluent-plugin-elasticsearch/version"
+require 'fluent/plugin'
 
 module Fluent
   module Plugin

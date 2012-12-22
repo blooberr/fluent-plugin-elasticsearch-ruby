@@ -1,6 +1,6 @@
 # Fluent::Plugin::Elasticsearch
 
-TODO: Write a gem description
+I wrote this so you can search logs routed through Fluentd.
 
 ## Installation
 

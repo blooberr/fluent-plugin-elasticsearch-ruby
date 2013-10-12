@@ -1,10 +1,13 @@
 # Fluent::Plugin::Elasticsearch
 
-I wrote this so you can search logs routed through Fluentd.
+You can search logs routed through Fluentd (Logstash alternative.)
 
 WIP - converting from tire to the official elasticsearch ruby client.
 
 ## Installation
+
+Hosted here - 
+https://rubygems.org/gems/fluent-plugin-elasticsearch-ruby
 
 Add this line to your application's Gemfile:
 

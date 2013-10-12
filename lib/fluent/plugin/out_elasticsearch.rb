@@ -21,7 +21,6 @@ class Fluent::ElasticsearchOutput < Fluent::BufferedOutput
   def start
     super
     es_url = "#{self.host}:#{self.port}"
-    puts "es_url: #{es_url}"
     @es = Elasticsearch::Client.new hosts: [es_url]
   end
 
@@ -34,11 +33,9 @@ class Fluent::ElasticsearchOutput < Fluent::BufferedOutput
   end
 
   def write(chunk)
-    puts "chunk - #{chunk.inspect}"
     bulk_items = []
 
     chunk.msgpack_each do |tag, time, record|
-      puts "#{tag} #{time} #{record}"
       bulk_items << {
         :index => { 
           :_index => self.index,
@@ -51,9 +48,7 @@ class Fluent::ElasticsearchOutput < Fluent::BufferedOutput
         }
       }
     end
-
     ## now bulk index
-    puts "bulk_items - #{bulk_items.inspect}"
     @es.bulk :index => self.index, :body => bulk_items
   end
   ##--

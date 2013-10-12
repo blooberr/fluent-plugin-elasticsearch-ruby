@@ -2,11 +2,13 @@
 
 I wrote this so you can search logs routed through Fluentd.
 
+WIP - converting from tire to the official elasticsearch ruby client.
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'fluent-plugin-elasticsearch'
+    gem 'fluent-plugin-elasticsearch-ruby'
 
 And then execute:
 
@@ -14,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install fluent-plugin-elasticsearch
+    $ gem install fluent-plugin-elasticsearch-ruby
 
 ## Usage
 

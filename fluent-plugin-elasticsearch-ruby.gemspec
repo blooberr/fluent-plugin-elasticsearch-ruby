@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fluent-plugin-elasticsearch/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "fluent-plugin-elasticsearch"
+  gem.name          = "fluent-plugin-elasticsearch-ruby"
   gem.version       = Fluent::Plugin::Elasticsearch::VERSION
-  gem.authors       = ["TODO: Write your name"]
-  gem.email         = ["TODO: Write your email address"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["Jon"]
+  gem.email         = ["blooberr@gmail.com"]
+  gem.description   = %q{Fluent plugin for elasticsearch}
+  gem.summary       = %q{Use this plugin in conjunction with elasticsearch and fluentd to log events.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

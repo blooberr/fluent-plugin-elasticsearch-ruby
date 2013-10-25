@@ -4,9 +4,11 @@ You can search logs routed through Fluentd (Logstash alternative.)
 
 WIP - converting from tire to the official elasticsearch ruby client.
 
+Use the ansible scripts to help deploy.
+
 ## Installation
 
-Hosted here - 
+Hosted here -  
 https://rubygems.org/gems/fluent-plugin-elasticsearch-ruby
 
 Add this line to your application's Gemfile:

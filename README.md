@@ -1,4 +1,4 @@
-# Fluent::Plugin::Elasticsearch
+# Fluent::Plugin::Elasticsearch, a plugin for [Fluentd](http://fluentd.org)
 
 You can search logs routed through Fluentd (Logstash alternative.)
 
